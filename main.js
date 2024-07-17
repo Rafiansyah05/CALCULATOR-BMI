@@ -53,11 +53,11 @@ form.onsubmit = function (e) {
     if (usia < 16) {
       alert('USIA KAMU BELU CUCKUP DEK');
     }
-    document.getElementById('pushNama').innerHTML = 'NAMA LENGKAP: ' + nama;
+    document.getElementById('pushNama').innerHTML = 'NAMA: ' + nama;
     document.getElementById('pushUsia').innerHTML = 'USIA KAMU: ' + usia;
     document.getElementById('pushTinggi').innerHTML = 'TINGGI BADAN: ' + tg;
     document.getElementById('pushBerat').innerHTML = 'BERAT BADAN: ' + berat;
-    document.getElementById('pushBMI').innerHTML = 'BMI : ' + bmi.toFixed(1);
+    document.getElementById('pushBMI').innerHTML = 'BMI: ' + bmi.toFixed(1);
 
     if (bmi < 18.5) {
       pushBMI.innerHTML = 'KAMU KEKURANGAN BERAT BADAN SOBAT';
