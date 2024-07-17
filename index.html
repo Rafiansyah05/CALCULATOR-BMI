@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  </head>
+  <body>
+    <div id="tampilanAwal" class="">
+      <div class="container" style="padding: 3pc">
+        <div class="row">
+          <form style="padding: 2pc" class="shadow-lg" name="myfom">
+            <h1 class="text-center"><strong>CALCULATOR BMI</strong></h1>
+            <br />
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Nama </label>
+              <input type="text" class="form-control" id="inputNama" aria-describedby="emailHelp" />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Usia</label>
+              <input type="number" class="form-control" id="inputUsia" />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Tinggi Badan</label>
+              <input type="number" class="form-control" id="inputTinggi" />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Berat Badan</label>
+              <input type="number" class="form-control" id="inputBerat" />
+            </div>
+            <label for="" class="mb-3">Jenis Kelamin</label>
+
+            <select class="form-select" aria-label="Default select example" id="opsi">
+              <option selected></option>
+              <option value="Laki-Laki">Laki-Laki</option>
+              <option value="Perempuan">Perempuan</option>
+            </select>
+            <br />
+
+            <button type="submit" class="btn btn-primary">CEK HASIL</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="tampilanUtama" class="hidden">
+      <div class="container" style="padding: 3pc">
+        <div class="row">
+          <form style="padding: 2pc" class="shadow-lg">
+            <h1 class="text-center"><strong>HASIL CALCULATOR BMI</strong></h1>
+            <br />
+
+            <p id="pushNama"></p>
+            <p id="pushUsia"></p>
+            <p id="pushTinggi"></p>
+            <p id="pushBerat"></p>
+            <p id="pushBMI"></p>
+            <br />
+            <h3 id="kategori"></h3>
+
+            <p class="text-center">Terima kasih sudah menggunakan layanan ini :</p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
